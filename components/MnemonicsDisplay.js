@@ -4,7 +4,7 @@ export default function MnemonicsDisplay({ mnemonicPhrase, seed }) {
         <div className="flex">
           {
             mnemonicPhrase ? mnemonicPhrase.split(' ').map((mnemonic, index) => {
-              return <div id={index} className="p-[5px] border rounded-lg ml-[5px] bg-gray-500 text-white">{mnemonic}</div>
+              return <div key={index} className="p-[5px] border rounded-lg ml-[5px] bg-gray-500 text-white">{mnemonic}</div>
             })  : ''
           }
         </div>
