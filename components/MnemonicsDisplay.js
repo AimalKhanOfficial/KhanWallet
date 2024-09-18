@@ -1,8 +1,8 @@
 export default function MnemonicsDisplay({ mnemonicPhrase, seed }) {
   return (
-    <>
-      <div className="p-[25px] text-black text-[20px]">{mnemonicPhrase}</div>
-      <div className="p-[25px] text-black text-[20px]">{seed}</div>
-    </>
+    <div className="text-black text-[15px] break-all p-[25px]">
+        <p>{mnemonicPhrase}</p>
+        <p>{seed}</p>
+    </div>
   );
 }
